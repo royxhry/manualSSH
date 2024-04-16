@@ -1,0 +1,5 @@
+ssh-keygen -t ed25519 -C "rororoy1257gmail.com"
+eval ~$(ssh-agent -s)
+ssh-add ~/.ssh/id_ed25519
+ssh-add -1 -E sha256
+clip < ~/.ssh/id_rsa.pub
